@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chef at Door</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="navbar">
+    <h1>Chef at Door</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#chefs">Available Chefs</a>
+      <a href="#booking">Book a Chef</a>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <h2>Book Professional Chefs for Your Special Occasions</h2>
+    <p>Customize menus, cuisines, and services to fit your needs!</p>
+    <button onclick="scrollToBooking()">Book Now</button>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Chef at Door is a platform connecting customers with skilled chefs for private dining and events.</p>
+  </section>
+
+  <section id="chefs">
+    <h2>Available Chefs</h2>
+    <div class="chef-list" id="chef-list"></div>
+  </section>
+
+  <section id="booking">
+    <h2>Book a Chef</h2>
+    <form id="booking-form">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="cuisine">Preferred Cuisine:</label>
+      <select id="cuisine" name="cuisine">
+        <option value="italian">Italian</option>
+        <option value="indian">Indian</option>
+        <option value="mexican">Mexican</option>
+        <option value="japanese">Japanese</option>
+      </select>
+
+      <label for="date">Event Date:</label>
+      <input type="date" id="date" name="date" required>
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Chef at Door. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
